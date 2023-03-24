@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'verify',
+    loadChildren: () => import('./verified/verified.module').then( m => m.VerifiedPageModule)
+  },
+  {
+    path: 'moderation',
+    loadChildren: () => import('./moderation/moderation.module').then( m => m.ModerationPageModule)
+  },
 ];
 
 @NgModule({

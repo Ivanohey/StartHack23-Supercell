@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+      <ion-toolbar id="header-row" class="ion-padding-top">
+        <ion-title size="large">Verification</ion-title>
+        <ion-avatar id="user-avatar" >
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKpQUy8JP90MAZxFjU0P9bPqkUWL35fd8Ag&usqp=CAU" alt="">
+        </ion-avatar>
+  </ion-toolbar>
+  </ion-header>
+  <ion-row >
+    <ion-col size-md="6" offset-md="3">
+      <ion-card id="community-mod-card">
+        <img alt="Silhouette of mountains" src="https://esports.eldesmarque.com/wp-content/uploads/2023/02/Clash-Royale-2.jpg" />
+        <ion-card-header>
+          <ion-card-title>You are eligible to become a moderator !</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Before we set up everything for you, we would like to remind you that the job of a moderator is not always an easy task. We do our best to filter out the most offensive messages but we can't guarantee a perfect result. Please take time to read our <a href="/verify">disclaimer</a>.
+        </ion-card-content>
+      </ion-card>
+      <ion-item>
+        <ion-checkbox slot="start" (click)="checkUncheck(checked)"></ion-checkbox>
+        <ion-label>I have read the disclaimer</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-text-center" size-md="6" offset-md="3">
+      <ion-button  [disabled]="!checked"  size="large" (click)="startModerating()"> Next </ion-button>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

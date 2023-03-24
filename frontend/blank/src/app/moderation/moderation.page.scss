@@ -1,0 +1,38 @@
+ion-item {
+    --padding-start: 0;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .card-thumbnail {
+    padding-left: 0px;
+  }
+  .card-label{
+    margin-left: 20px;
+  }
+
+ion-avatar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 30px;
+  
+  }
+  
+  #header-row{
+    padding-top: 20px;
+  }
+  
+  #user-avatar{
+    padding:5px
+  
+  }
+
+  
+  .message-title {
+    font-size: large;
+  }
